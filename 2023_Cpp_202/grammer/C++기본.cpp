@@ -4,7 +4,8 @@
 int main() {
 
 	// << 출력 연산자
-	std::cout << "hello world\n";
+	// endl : 개행
+	std::cout << "hello world\n" << std::endl;
 
 	return 0;
 
