@@ -1,5 +1,11 @@
-﻿#include <stdio.h>
+﻿// cout객체
+#include <iostream>
+
 int main() {
-	printf("Hello World!\n");
+
+	// << 출력 연산자
+	std::cout << "hello world\n";
+
 	return 0;
+
 }
