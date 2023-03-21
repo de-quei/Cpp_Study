@@ -19,7 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="참조 문제.cpp" />
+    <ClCompile Include="grammer\참조 문제.cpp" />
+    <ClCompile Include="grammer\참조.cpp" />
+    <ClCompile Include="grammer\함수 오버로딩.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
