@@ -1,16 +1,13 @@
 ﻿#include <stdio.h>
-#include <string.h>
+#include <string.h>	// 문자열 함수가 들어있음
 
 int main(void) {
 
 	char str1[30] = "";
 	char str2[30] = "Jiwoo";
 
+	//str1에 str2할당
 	strcpy(str1, str2);
-
-	for (int i = 0; str2[i] != '\0'; i++) {
-		str1[i] = str2[i];
-	}
 
 	printf("%s\n", str1);
 
