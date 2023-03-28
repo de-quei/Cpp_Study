@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="grammer\문자열 비교.cpp">
+    <ClCompile Include="prac.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
