@@ -21,6 +21,15 @@ public:
 	string tel;			//전화번호
 	string department;	//학과
 	string address;		//주소
+
+	void print(void) {
+		//자료형 : Student (class 생략가능)
+		cout << "학    번 : " <<  number << endl;
+		cout << "이    름 : " <<  name << endl;
+		cout << "전화번호 : " <<  tel << endl;
+		cout << "학    과 : " <<  department << endl;
+		cout << "주    소 : " <<  address << endl;
+	}
 };
 int main(void)
 {
@@ -31,12 +40,9 @@ int main(void)
 	student.department = "뉴미디어소프트웨어과";
 	student.address = "제주특별자치도 제주시 노형동 월산북길 77, 노형휴팰리스 2302호";
 
-	//자료형 : Student (class 생략가능)
-	cout << "학    번 : " << student.number << endl;
-	cout << "이    름 : " << student.name << endl;
-	cout << "전화번호 : " << student.tel << endl;
-	cout << "학    과 : " << student.department << endl;
-	cout << "주    소 : " << student.address << endl;
+	student.print();
+
+	
 
 	return 0;
 }
