@@ -23,6 +23,15 @@ public:
 		department = "뉴미디어소프트웨어과";
 		address = "제주특별자치도 제주시 노형동 월산북길 77, 노형휴팰리스 2302호";
 	}
+
+	Student(int number, string name, string tel, string department, string adress) {
+		this->number = number;
+		this->name = name;
+		this->tel = tel;
+		this->department = department;
+		this->address = adress;
+	}
+
 	void print(void) {
 		//자료형 : Student (class 생략가능)
 		cout << "학    번 : " <<  number << endl;
@@ -45,9 +54,13 @@ private:
 };
 int main(void)
 {
-	Student student;
+	//매개변수가 없는 생성자
+	//Student student;
+	Student student1 = Student();
+	//student.print();
 
-	student.print();
+	Student student2 = Student(1234, "오모리모토키", "010-1212-3434", "MRS.GREENAPPLE", "일본");
+	student2.print();
 
 	return 0;
 }
