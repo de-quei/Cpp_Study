@@ -71,7 +71,9 @@ int main(void)
 	p.weight = 50;
 
 	struct Person* ptr = &p;
-	cout << "    키 : " << (*ptr).height << "cm" << endl;
+
+	// 둘 다 같은 결과
+	cout << "    키 : " << ptr->height << "cm" << endl;
 	cout << "몸무게 : " << (*ptr).weight << "kg" << endl;
 
 	return 0;
