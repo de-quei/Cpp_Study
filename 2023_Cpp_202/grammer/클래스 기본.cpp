@@ -22,10 +22,16 @@ public:
 	string department;	//학과
 	string address;		//주소
 
+public:
 	// 생성자 (Constructor) : 객체를 생성할 때 호출되는 함수
 	// 생성자를 정의하지 않으면 default로 매개변수가 없는 생성자가 정의된다.
-	// Student() { ... }
-
+	Student() {
+		number = 2208;
+		name = "김현지";
+		tel = "010-2952-3435";
+		department = "뉴미디어소프트웨어과";
+		address = "제주특별자치도 제주시 노형동 월산북길 77, 노형휴팰리스 2302호";
+	}
 	void print(void) {
 		//자료형 : Student (class 생략가능)
 		cout << "학    번 : " <<  number << endl;
@@ -38,11 +44,6 @@ public:
 int main(void)
 {
 	Student student;
-	student.number = 2208;
-	student.name = "김현지";
-	student.tel = "010-2952-3435";
-	student.department = "뉴미디어소프트웨어과";
-	student.address = "제주특별자치도 제주시 노형동 월산북길 77, 노형휴팰리스 2302호";
 
 	student.print();
 
