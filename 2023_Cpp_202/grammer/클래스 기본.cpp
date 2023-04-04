@@ -13,7 +13,7 @@ using namespace std;
 // class는 default가 private (struct는 default가 public)
 class Student {
 	// 성능때문에 학번은 문자열로 하지 않음.
-	// 일반적으로 문자열은 정수형 데이터보다 많은 메모리 공간을 요귷며
+	// 일반적으로 문자열은 정수형 데이터보다 많은 메모리 공간을 요구하며
 	// 정수는 비교연산을 한번에 할 수 있으나, 문자열은 글자 수 만큼 반복하여 비교해야함.
 public:
 	int number;			//학번
@@ -21,6 +21,10 @@ public:
 	string tel;			//전화번호
 	string department;	//학과
 	string address;		//주소
+
+	// 생성자 (Constructor) : 객체를 생성할 때 호출되는 함수
+	// 생성자를 정의하지 않으면 default로 매개변수가 없는 생성자가 정의된다.
+	// Student() { ... }
 
 	void print(void) {
 		//자료형 : Student (class 생략가능)
@@ -41,8 +45,6 @@ int main(void)
 	student.address = "제주특별자치도 제주시 노형동 월산북길 77, 노형휴팰리스 2302호";
 
 	student.print();
-
-	
 
 	return 0;
 }
