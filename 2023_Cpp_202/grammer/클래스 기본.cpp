@@ -29,6 +29,9 @@ public:
 	}
 
 	Student(int number, string name, string tel, string department, string adress) {
+
+		// this : 객체 자기 자신을 가리키는 포인터 (주소값)
+		// 멤버변수와 매개변수가 이름이 같아도 구별가능
 		this->number = number;
 		this->name = name;
 		this->tel = tel;
