@@ -28,15 +28,10 @@ public:
 		address = "제주특별자치도 제주시 노형동 월산북길 77, 노형휴팰리스 2302호";
 	}
 
-	Student(int number, string name, string tel, string department, string adress) {
-
-		// this : 객체 자기 자신을 가리키는 포인터 (주소값)
-		// 멤버변수와 매개변수가 이름이 같아도 구별가능
-		this->number = number;
-		this->name = name;
-		this->tel = tel;
-		this->department = department;
-		this->address = adress;
+	Student(int _number, string _name, string _tel, string _department, string _address) 
+		// 멤버변수 초기화. const / 참조형 멤버변수 사용 가능
+		: number(_number), name(_name), tel(_tel), department(_department), address(_address)
+	{
 	}
 
 	void print(void) {
