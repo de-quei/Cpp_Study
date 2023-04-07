@@ -65,19 +65,22 @@ int main(void)
 	//Student student2 = Student(1234, "오모리모토키", "010-1212-3434", "MRS.GREENAPPLE", "일본");
 	//student2.print();
 
+	//struct Person p;
+	//p.height = 163;
+	//p.weight = 50;
+
+	//struct Person* ptr = &p;
+
+	// 둘 다 같은 결과
+	//cout << "키       : " << ptr->height << "cm" << endl;
+	//cout << "몸 무 게 : " << (*ptr).weight << "kg" << endl;
+
 	//동적할당은 포인터로 접근한다.
 	Student* student3 = new Student(1234, "오모리모토키", "010-1212-3434", "MRS.GREENAPPLE", "도쿄");
 	student3->print();
 
-	struct Person p;
-	p.height = 163;
-	p.weight = 50;
-
-	struct Person* ptr = &p;
-
-	// 둘 다 같은 결과
-	cout << "키       : " << ptr->height << "cm" << endl;
-	cout << "몸 무 게 : " << (*ptr).weight << "kg" << endl;
+	///동적할당 해제 (안하면 메모리 누수현상 발생)
+	delete student3;
 
 	return 0;
 }
