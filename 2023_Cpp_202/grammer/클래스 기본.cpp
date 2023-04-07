@@ -61,8 +61,13 @@ int main(void)
 	Student student1 = Student();
 	//student.print();
 
-	Student student2 = Student(1234, "오모리모토키", "010-1212-3434", "MRS.GREENAPPLE", "일본");
+	// 정적할당
+	//Student student2 = Student(1234, "오모리모토키", "010-1212-3434", "MRS.GREENAPPLE", "일본");
 	//student2.print();
+
+	//동적할당은 포인터로 접근한다.
+	Student* student3 = new Student(1234, "오모리모토키", "010-1212-3434", "MRS.GREENAPPLE", "도쿄");
+	student3->print();
 
 	struct Person p;
 	p.height = 163;
@@ -71,8 +76,8 @@ int main(void)
 	struct Person* ptr = &p;
 
 	// 둘 다 같은 결과
-	cout << "    키 : " << ptr->height << "cm" << endl;
-	cout << "몸무게 : " << (*ptr).weight << "kg" << endl;
+	cout << "키       : " << ptr->height << "cm" << endl;
+	cout << "몸 무 게 : " << (*ptr).weight << "kg" << endl;
 
 	return 0;
 }
