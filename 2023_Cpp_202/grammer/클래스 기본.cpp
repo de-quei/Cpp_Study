@@ -61,7 +61,7 @@ int main(void)
 	Student student1 = Student();
 	//student.print();
 
-	// 정적할당
+	// 정적할당 : 컴파일 시간에 메모리 크기 결정
 	//Student student2 = Student(1234, "오모리모토키", "010-1212-3434", "MRS.GREENAPPLE", "일본");
 	//student2.print();
 
@@ -76,6 +76,7 @@ int main(void)
 	//cout << "몸 무 게 : " << (*ptr).weight << "kg" << endl;
 
 	//동적할당은 포인터로 접근한다.
+	//실행 시간에 메모리 크기 결정 / heap영역에 할당
 	Student* student3 = new Student(1234, "오모리모토키", "010-1212-3434", "MRS.GREENAPPLE", "도쿄");
 	student3->print();
 
