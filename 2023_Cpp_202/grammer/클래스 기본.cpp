@@ -59,13 +59,23 @@ int main(void)
 {
 	//매개변수가 없는 생성자
 	//Student student;
-	Student student1 = Student();
+	//Student student1 = Student();
 	//student.print();
 
 	// 정적할당 : 컴파일 시간에 메모리 크기 결정
 	//Student student2 = Student(1234, "오모리모토키", "010-1212-3434", "MRS.GREENAPPLE", "일본");
 	//student2.print();
 
+	Student student3[2];
+
+	for (int i = 0; i < sizeof(student3)/sizeof(Student); i++) {
+		student3[i].print();
+	}
+
+	Student* student4 = new Student[2];
+	for (int i = 0; i < sizeof(student4) / sizeof(Student); i++) {
+		
+	}
 	//struct Person p;
 	//p.height = 163;
 	//p.weight = 50;
@@ -78,11 +88,11 @@ int main(void)
 
 	//동적할당은 포인터로 접근한다.
 	//실행 시간에 메모리 크기 결정 / heap영역에 할당
-	Student* student3 = new Student(1234, "오모리모토키", "010-1212-3434", "MRS.GREENAPPLE", "도쿄");
-	student3->print();
+	//Student* student3 = new Student(1234, "오모리모토키", "010-1212-3434", "MRS.GREENAPPLE", "도쿄");
+	//student3->print();
 
 	///동적할당 해제 (안하면 메모리 누수현상 발생)
-	delete student3;
+	//delete student3;
 
 	return 0;
 }
