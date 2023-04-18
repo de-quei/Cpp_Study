@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="grammer\클래스 문제 (Employee).cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="grammer\클래스 기본.cpp">
+    <ClCompile Include="grammer\클래스 중급.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
