@@ -5,10 +5,10 @@ using namespace std;
 class MString {	//class는 기본이 private
 public:
 	MString(const char* str) {	//생성자
-		unsigned int l = strlen(str); //문자열의 길이
+		unsigned int l = strlen(str);	//문자열의 길이
 		//동적할당!
-		c_str_ = new char[l + 1];	// '\0' 널문자가 들어갈 공간 +1
-		strcpy(c_str_, str);		// 문자열 복사
+		c_str_ = new char[l + 1];		// '\0' 널문자가 들어갈 공간 +1
+		strcpy(c_str_, str);			// 문자열 복사
 		size_ = l;
 		cout << "MString 생성자 호출 완료" << endl;
 	}
@@ -29,13 +29,8 @@ private:
 };
 int main(){
 
-	//생성자가 호출되면서 "I will be back" 만큼의(문자열) 동적할당이 이루어짐.
-	MString* str = new MString("I will be back");
-	cout << str->c_str() << endl;
-
-	//객체 str만 삭제, 동적할당으로 생성된 문자열은 그대로 남아있음(메모리 누수)
-	// TODO : 소멸자(destructor)를 이용하여 동적할당된 메모리도 해제하자.
-	delete str;
+	MString str = MString("I will be back");
+	cout << str.c_str() << endl;
 
 	return 0;
 }
