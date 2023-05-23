@@ -14,6 +14,11 @@ int main(void)
 	snake.setPosition(100, 300);
 	snake.setSize(Vector2f(50, 50));
 
+	RectangleShape apple;
+	apple.setFillColor(Color::Red);
+	apple.setPosition(200, 400);
+	apple.setSize(Vector2f(50, 50));
+
 	while (window.isOpen()) 
 	{
 		Event e;
@@ -35,6 +40,7 @@ int main(void)
 
 		window.clear();
 
+		window.draw(apple);
 		window.draw(snake);
 
 		window.display();
