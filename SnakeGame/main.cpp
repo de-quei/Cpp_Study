@@ -1,4 +1,6 @@
 ﻿#include <SFML/Graphics.hpp>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace sf;
 
@@ -16,7 +18,7 @@ int main(void)
 
 	RectangleShape apple;
 	apple.setFillColor(Color::Red);
-	apple.setPosition(200, 400);
+	apple.setPosition(rand() % (640 - 50), rand() % (480 - 50));
 	apple.setSize(Vector2f(50, 50));
 
 	while (window.isOpen()) 
